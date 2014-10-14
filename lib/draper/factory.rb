@@ -75,7 +75,7 @@ module Draper
       end
 
       def collection?
-        object.respond_to?(:first)
+        object.respond_to?(:to_ary)
       end
 
       def decoratable?
